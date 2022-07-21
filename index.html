@@ -82,28 +82,41 @@
 
 <pre>
     <h2>Git/GitHub</h2>
+1- Configurar user GitHub no Git:
+1.1- No VSCode, terminal, new terminal, seta pra baixo "select default profile", seleciona GitBash, com o terminal aberto configurar email e user:
+    git config --global user.email "email@gmail.com"
+    git config --global user.name "usuárioGitHub"
+1- Abrir repositorio do PC, clicar com o direito e ir em "GitBash Here". 
+2- Dar os comandos abaixo:
     git init -> inicia o repositorio
-    git add . -> Envia para área de stand
+    git add . -> Envia para área de staged, <b>SALVAR arquivo no VSCode antes de dar esse comando!</b>
     git status -> verifica como está o Git
-    git commit -m "Mensagem" -> Commita as novas atualizações do Git no repositório da maquina
-    git push origin main -> Empurra alterações do repositório local para o GitHub
+    git commit -m "first commit" -> Commita as novas atualizações do Git no repositório da maquina
+    git branch -M "main" -> Renomeia branch master para main
+    git remote add origin https://github.com/pedrohenry99/google-glass.git -> Link tirado do GitHub, vai sincronizar repositório local com o GitHub
+    git push -u origin "main" -> Empurra alterações do repositório local para o GitHub
+
+
     <h2>Criar repositório no GitHub</h2>
     1- Repository -> New -> Prencher os dados
+
     <h2>Criar Branch</h2>
-    Branch: Novas linhas de tempo
+Branch: Novas linhas de tempo
     git checkout -b "novo-botao" -> Cria uma nova branch chamada "novo botão", saindo da branch "main"
     git add . -> Envia para área de stand
     git commit -m "novo botao" -> Commita as novas atualizações
     git push origin novo-botao
     git checkout main -> volta para a branch main
     git merge novo-botao -> vai colocar a branch "novo-botao" na branch principal "main"
-    <h2>Importar Repositório do GitHub</h2>
-    1- Crie uma pasta no PC, clica com o direito e vai em "git bash here"
-    git clone "https://github.com/pedrohenry99/ProjetoGit.git" -> Clona repositório do github no pc
 
-    <h2>Atualizar repositorio depois de ter importado</h2>
-    1- Abrir o Git dentro do repositório
+    <h2>Importar Repositório GitHub no PC</h2>
+    1- Crie uma pasta no PC, clica com o direito e vai em "git bash here"
+    git clone "https://github.com/pedrohenry99/ProjetoGit.git" -> Clona repositório do GitHub no PC
+
+    <h2>Atualizar repositorio já importado</h2>
+    1- Abrir o Git dentro do repositório do PC (mesmo passo 1 da etapa anterior)
     git pull -> puxa as atualizações do repositório no GitHub
+
 </pre>
 
 <br/>
@@ -131,7 +144,7 @@
 <h2 style="text-align:center">Como funciona</h2>
 <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
 
-<h2 style="text-align:center">O que você pode fazer com o Google Glasses</h2>
+<h2 style="text-align:center">O que você pode fazer com o Google Glass</h2>
 <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/>humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
 
 [AQUI ENTRA UM VÍDEO]
