@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("fundo-de-aco.jpg");
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+p { text-align: justify;
+    text-indent: 25pt;
+}
+
+/* Formatação de Imagens  com legendas */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    position: absolute;
+    top:0px;
+    background-color: rgba(0,0,0,.4);
+}
