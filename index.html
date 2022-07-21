@@ -82,12 +82,13 @@
 
 <pre>
     <h2>Iniciando no Git/GitHub</h2>
-1- Configurar user GitHub no VSCode:
-1.1- No VSCode, terminal, new terminal, seta pra baixo "select default profile", seleciona GitBash, com o terminal aberto configurar email e user:
+1- Baixar Git e VSCode
+2- Configurar user GitHub no VSCode:
+3- No VSCode, terminal, new terminal, seta pra baixo "select default profile", seleciona GitBash, com o terminal aberto configurar email e user:
     git config --global user.email "email@gmail.com"
     git config --global user.name "usuárioGitHub"
-2- Ligar AutoSave: File -> AutoSave
-3- Instalar Extensões: Auto Rename Tag, Dracula Official, Helium Icon Theme, HTML Preview, IntelliCode, Preview
+4- Ligar AutoSave: File -> AutoSave
+5- Instalar Extensões: Auto Rename Tag, Dracula Official, Helium Icon Theme, HTML Preview, IntelliCode, Preview
 
 <h2>Atualizar repositório GitHub pelo GitBash</h2>
 1- Dar os comandos abaixo:
@@ -99,14 +100,18 @@
     git remote add origin https://github.com/pedrohenry99/google-glass.git -> Link tirado do GitHub, vai sincronizar repositório local com o remoto do GitHub
     git push -u origin "main" -> Empurra alterações do repositório local para o remoto do GitHub
 
+<h2>Atualizar repositorio já importado pelo GitBash</h2>
+    1- Abrir o Git dentro do repositório do PC
+    git pull -> puxa as atualizações do repositório no GitHub
+
 <h2>Atualizar repositorio GitHub pelo VSCode</h2>
 1- Abrir o repositório no VSCode
 2- Source Control, "+" Stage Changes, colocar message, Commit, SyncChanges
 
-    <h2>Criar repositório no GitHub</h2>
-    1- Repository -> New -> Prencher os dados
+<h2>Criar repositório no GitHub</h2>
+Repository -> New -> Prencher os dados
 
-    <h2>Criar Branch no GitBash</h2>
+<h2>Criar Branch no GitBash</h2>
 1- Branch: Novas linhas de tempo
     git checkout -b "novo-botao" -> Cria uma nova branch chamada "novo botão", saindo da branch "main"
     git add . -> Envia para área de stand
@@ -124,10 +129,6 @@
     <h2>Importar Repositório GitHub no PC</h2>
 1- Crie uma pasta no PC, clica com o direito e vai em "git bash here"
     git clone "https://github.com/pedrohenry99/ProjetoGit.git" -> Clona repositório do GitHub no PC
-
-    <h2>Atualizar repositorio já importado pelo GitBash</h2>
-1- Abrir o Git dentro do repositório do PC (mesmo passo 1 da etapa anterior)
-    git pull -> puxa as atualizações do repositório no GitHub
 </pre>
 <br/>
 
